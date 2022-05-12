@@ -2,6 +2,8 @@
 
 This [program](main.py) will calculate the duration between two times.
 
+I had to do invoices for freelance work and this helped me, maybe it'll help you.
+
 ## Instructions
 
 Type in the terminal:
