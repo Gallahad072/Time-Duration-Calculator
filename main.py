@@ -1,3 +1,6 @@
+from ast import While
+
+
 def main(start=False, end=False):
     print("\nPlease enter a time in 24 hour clock format, e.g 0010, 2305, 1517\n")
 
@@ -37,10 +40,14 @@ def main(start=False, end=False):
     mins = end_mins_total - start_mins_total
 
     hrs_mins = f"{str(mins//60)}:{str(mins%60).zfill(2)}"
+    message = (
+        f"\nDuration:\n{hrs_mins} hours and minutes\n{hrs} hours\n{mins} minutes\n"
+    )
 
-    return hrs_mins, hrs, mins
+    return hrs_mins, hrs, mins, message
 
 
 if __name__ == "__main__":
-    hrs_mins, hrs, mins = main()
-    print(f"\nDuration:\n{hrs_mins} hours and minutes\n{hrs} hours\n{mins} minutes\n")
+    while True:
+        vals = main()
+        print(vals[-1])
