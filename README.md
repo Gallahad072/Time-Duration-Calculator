@@ -22,4 +22,11 @@ On importing this as a module, run:
 >
 > it will return a list of values e.g. ('9:48', 9.8, 588)
 >
-> First value is duration in hours and minutes, second is hours, third is minutes
+> The function return 4 values:
+>
+> - Hours and Minutes
+> - Hours
+> - Minutes
+> - Message
+>
+> Message is formatted description of the returned durations
